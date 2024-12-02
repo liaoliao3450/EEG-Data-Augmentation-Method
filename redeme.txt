@@ -49,7 +49,7 @@ typing_extensions         4.1.1              pyh06a4308_0
 @{article,{article,
 	title = {EEGDataAugmentation Method Based on the Gaussian Mixture Model},
 	author={Chuncheng Liao, Shiyu Zhao, Xiangcun Wang,Jiacai Zhang,Yongzhong Liao,Xia Wu}
-	url= {Proc. AAAI Conf. on Artificial Intelligence},
+	url= {https://github.com/liaoliao3450/EEG-Data-Augmentation-Method},
 	year = {2024}
 }
 ```
