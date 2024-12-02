@@ -1,0 +1,57 @@
+
+
+# EEG Data Augmentation Method Based on the Gaussian Mixture Model
+
+#  School of Artificial Intelligence, Beijing Normal University
+#  email: liaocc3450@bnu.edu.cn
+#  qq:283425249
+
+# Overview
+
+Traditional methods of electroencephalograms(EEG) data augmentation, such as segmentation-reassembly and noise mixing, suffer from data distortion that can alter the original temporal and spatial feature distributions of the brain signals. Deep learning-based methods for generating augmentation EEG data, such as Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs), have shown promising performance but require a large number of comparative learning samples for model training. To address these issues, this paper introduces an EEG data augmentation method based on Gaussian Mixture Model microstates, which retains the spatiotemporal dynamic features of the EEG signals in the generated data. The method first performs Gaussian mixture clustering on data samples of the same class, using the product of the probability coefficients and weight matrices of each Gaussian model as corresponding microstate features. Next, it randomly selects two EEG data samples of the same type, analyzes the similarity of the main components of the microstate features, and swaps the similar main components to form new Gaussian mixture model features. Finally, new data is generated according to the Gaussian mixture model using the respective model probabilities, weights, means, and variances. Experimental results on publicly available datasets demonstrate that the proposed method effectively characterizes the original data's spatiotemporal and microstate features, improving the accuracy of subject task classification.rformance of the generative models for continuous data. Amongst them are the recently emerging diffusion probabilistic models, which have the observed advantage of generating high-quality samples. Recent advances for categorical generative models have focused on log likelihood improvements. In this work, we propose a generative model for categorical data based on diffusion models with a focus on high-quality sample generation, and propose sampled-based evaluation methods. 
+
+
+## Installation
+```bash
+ packages in environment at D:\Anaconda\envs\Eegdenoise:
+#
+# Name                    Version                   Build  Channel
+braindecode               0.7                      pypi_0    pypi
+einops                    0.4.1                    pypi_0    pypi
+matplotlib                3.3.4            py36haa95532_0
+mne                       0.23.4                   pypi_0    pypi
+numpy                     1.19.2           py36hadc3359_0
+pandas                    1.1.5            py36hd77b12b_0
+pillow                    8.3.1            py36h4fa10fc_0
+pip                       21.2.2                   pypi_0    pypi
+pyqt                      5.9.2            py36h6538335_2
+python                    3.6.13               h3758d61_0
+pytorch                   1.9.0           py3.6_cuda10.2_cudnn7_0    pytorch
+qt                        5.9.7            vc14h73c81de_0
+scikit-learn              0.24.2           py36hf11a4ad_1    anaconda
+scipy                     1.5.4                    pypi_0    pypi
+tqdm                      4.64.1                   pypi_0    pypi
+typing_extensions         4.1.1              pyh06a4308_0
+```
+
+## Running Steps
+1.data_trans.py
+2.AUG_gmm.py
+3.AUG_other_mathy.py
+4.TEST_M.PY
+5.Sigle_aug_math.py
+6.plot_t_mathod.py
+7.plot_tSNE.py
+
+## Citation
+
+```
+@{article,{article,
+	title = {EEGDataAugmentation Method Based on the Gaussian Mixture Model},
+	author={Chuncheng Liao, Shiyu Zhao, Xiangcun Wang,Jiacai Zhang,Yongzhong Liao,Xia Wu}
+	url= {Proc. AAAI Conf. on Artificial Intelligence},
+	year = {2024}
+}
+```
+
+
